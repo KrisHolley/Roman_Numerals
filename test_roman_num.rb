@@ -26,6 +26,10 @@ class My_test < Minitest::Test
 		assert_equal("XIV", romanize(14))
 	end
 
+	def test_19_roman
+		assert_equal("XIX", romanize(19))
+	end
+
 	def test_40_return_xl
 		assert_equal("XL", romanize(40))
 	end
@@ -66,6 +70,29 @@ class My_test < Minitest::Test
 		assert_equal(7, arabic("VII"))
 	end
 
+	def test_19
+		assert_equal(19, arabic("XIX"))
+	end
+
+	def test_39
+		assert_equal(39, arabic("XXXIX"))
+	end
+
+	def test_126
+		assert_equal(126, arabic("CXXVI"))
+	end
+
+	def test_340
+		assert_equal(340, arabic("CCCXL"))
+	end
+
+	def test_768
+		assert_equal(768,  arabic("DCCLXVIII"))
+	end
+
+	def test_1492
+		assert_equal(1492, arabic("MCDXCII"))
+	end
 
 
 end

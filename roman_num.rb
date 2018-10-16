@@ -15,8 +15,8 @@ def romanize(number)
 end
 # romanize(4)
 def arabic(romans)
-	letters = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
-	values = [1000, 900, 500, 400, 100, 90, 50, 40, 10 ,9, 5, 4, 1]
+	letters = ["CM", "M", "CD", "D", "XC", "C", "XL", "L", "IX", "X", "IV", "V", "I"]
+	values = [900, 1000, 400, 500, 90, 100, 40, 50, 9, 10, 4, 5, 1]
 	arabic_number = letters.zip values
 	# puts arabic_number
 	number = 0
